@@ -1,0 +1,105 @@
+<html ng-app="myAppModule_CEP4">
+	<head>
+	    <title>Ejemplo</title>
+	   
+	    <script type="text/javascript"
+	        src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+		<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+
+		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="//cdn.datatables.net/1.10.1/js/jquery.dataTables.min.js"></script>
+		<script type="text/javascript" src="//cdn.datatables.net/plug-ins/725b2a2115b/integration/bootstrap/3/dataTables.bootstrap.js"></script>
+
+		<script type="text/javascript" src="routes.js"></script>
+		<script type="text/javascript" src="controllers.js"></script>
+		<script type="text/javascript" src="services.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+
+
+
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">	
+		<link rel="stylesheet" href="//cdn.datatables.net/plug-ins/725b2a2115b/integration/bootstrap/3/dataTables.bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.1/css/jquery.dataTables.css">
+
+
+		<style>
+			html 					{ overflow-y:scroll; }
+			body 					{ padding-top:50px; }
+			#todo-list 				{ margin-bottom:30px; }
+			#todo-form 	 			{ margin-bottom:50px; }
+		</style>
+	</head>
+
+	<body ng-app>
+		<!-- 
+		<div class="text-center text-muted">
+			<hr class="container">
+		</div>		
+		-->
+		<nav class="navbar navbar-inverse" role="navigation">
+		    <div class="navbar-header">
+		        <a class="navbar-brand" ui-sref="#">
+		        	<img data-src="#/img/logo.jpg"> Ejemplo
+		        </a>
+		    </div>
+	
+		    <ul class="nav navbar-nav">
+		    	
+		      <ul class="nav navbar-nav">
+		        <li class="dropdown">
+		          <a class="btn btn-navbar"  href="#" class="dropdown-toggle" data-toggle="dropdown">Clients <span class="caret"></span></a>
+		          <ul class="dropdown-menu" role="menu">
+					<li><a href="#/addClient">Add Client</a></li>
+		            <li><a href="#/listClients">Show Clients</a></li>
+		            <li><a href="#">Delete Client</a></li>
+		            <li class="divider"></li>
+		            <li><a href="#">Separated link</a></li>
+		            <li class="divider"></li>
+		            <li><a href="#">One more separated link</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+
+		      <ul class="nav navbar-nav">
+		        <li class="dropdown">
+		          <a class="btn btn-navbar"  href="#" class="dropdown-toggle" data-toggle="dropdown">Products <span class="caret"></span></a>
+		          <ul class="dropdown-menu" role="menu">
+		            <li><a href="#">Add Stock</a></li>
+		            <li><a href="#">Modify Stock</a></li>
+		            <li class="divider"></li>
+		            <li><a href="#">List Stock</a></li>
+		            <li class="divider"></li>
+		            <li><a href="#">One more separated link</a></li>
+		          </ul>
+		        </li>
+		      </ul>	
+
+		      <ul class="nav navbar-nav">
+		        <li class="dropdown">
+		          <a class="btn btn-navbar"  href="#" class="dropdown-toggle" data-toggle="dropdown">Admin <span class="caret"></span></a>
+		          <ul class="dropdown-menu" role="menu">
+		            <li><a href="#">Add User</a></li>
+		            <li><a href="#/listEmployee">Show Users</a></li>
+		            <li class="divider"></li>
+		            <li><a href="#">Separated link</a></li>
+		            <li class="divider"></li>
+		            <li><a href="#">One more separated link</a></li>
+		          </ul>
+		        </li>
+		      </ul>		      
+  
+		        <li><a href="#/index" ui-sref="home">Home</a></li>
+		        <li><a ng-href="/listEmployee" ui-sref="about">About</a></li>
+		    </ul>
+		</nav>
+		<!---->
+		<div class="container">
+	  		<div ng-view></div>
+		</div>
+		<div class="text-center text-muted">
+			<hr class="container">
+			<p>CEP - Modulo3 - AngularJS.</p>
+			<p> - Nicolas Bordenave - </p>
+		</div>
+	</body>
+</html>

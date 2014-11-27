@@ -1,0 +1,32 @@
+<!-- <script type="text/javascript" src="ClientController.js"></script> -->
+<div class="container" ng-controller="clientController">	
+	<div class="jumbotron text-center" >
+		<p>
+			<h1> Nuevo Cliente</h1>
+		</p>
+	</div>
+
+	<div>
+		<div class="table table-striped">
+			<form>
+			
+				<div class="form-group">
+				    <label class="sr-only" for="name">Nombre</label>
+				   		<input type="text" class="form-control" id="name" placeholder="Ingrese Nombre" ng-model="name">
+				</div>
+			  	<div class="form-group">
+			    	<label class="sr-only" for="lasName" >Apellido</label>
+			    	<input type="text" class="form-control" id="lasName" placeholder="Ingrese Apellido" ng-model="lastName">
+	 		 	</div>
+	 		 
+
+				<div class="text-center">
+					<p>
+						<a class="btn btn-default btn-primary" ng-click="save()"><span class="glyphicon glyphicon-user"></span> Save</a>
+						<a href="#/" class="btn btn-default btn-danger"><span class="glyphicon glyphicon-ban-circle"></span> Cancel</a>
+					</p>
+				</div>
+			</form>			
+		</div>
+	</div>	
+</div>
