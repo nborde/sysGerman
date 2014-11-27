@@ -219,7 +219,7 @@ createAndAddNewEmployee = function(name, salary){
 	};
 
 	employees.push(newEmployee);
-	console.log("employees push ok")
+	console.log("employees push ok ")
 	return;
 }
 
