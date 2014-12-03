@@ -3,7 +3,7 @@ var controllers = angular.module('myAppModule_CEP4.controllers',[],function(){})
 controllers.controller('EmpleadosController',function($scope, $location, EmpleadosService){
 	if($scope.empleados == null){
 		$scope.empleados = EmpleadosService.getEmpleadosList();
-	}
+	};
 
 
 	$scope.initList = function(id){
